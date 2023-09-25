@@ -1,0 +1,66 @@
+/*
+ * 
+ * Colors
+ *
+*/
+
+// Colors from Brand Design
+@magenta: #e20074;
+@gray56: #383838;
+@gray75: #4B4B4B;
+
+// Icinga colors
+@icinga-blue: @magenta;
+@icinga-secondary: @magenta;
+
+// <tr> coors
+@tr-active-color: fade(@magenta, 15%);
+@tr-hover-color: fade(@magenta, 5%);
+
+// Menu colors
+@menu-bg-color: @gray75;
+@menu-active-bg-color: @gray56;
+
+
+/*
+ * 
+ * Logo
+ *
+*/
+
+// T-Systems logo for login (not active due to external authentication) and logout page
+#icinga-logo {
+	// T-Systems white
+	background-image: url('../img/t-systems/MMS_Schriftzug_n.png');
+	
+	&.invert {
+		// T-Systems magenta
+		background-image: url('../img/t-systems/MMS_Schriftzug_p.png');
+	}
+}
+
+// menu
+#header-logo {
+	background-image: url('../img/t-systems/T_logo_rgb_p.png');
+}
+
+// menu (collapsed)
+#layout:not(.minimal-layout).sidebar-collapsed #header-logo {
+	background-image: url('../img/t-systems/T_logo_rgb_p.png');
+}
+
+// padding
+#header-logo-container {
+	padding: 0.5em;
+}
+
+// padding (collapsed)
+#layout:not(.minimal-layout).sidebar-collapsed #header-logo-container {
+	padding: 0.33em;
+}
+
+@light-mode: {
+  :root {
+    --body-bg-color: white;
+  }
+};
