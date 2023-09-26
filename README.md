@@ -1,1 +1,1 @@
-# icingaweb2-theme-tsystems
+# icingaweb2-theme-telekom-mms
